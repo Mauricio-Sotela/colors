@@ -1,0 +1,22 @@
+body {
+  background-color: black;
+}
+
+body #box {
+  width: 30px;
+  height: 30px;
+  background-color: #ffc2cc;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: tomato;
+}
+
+nav a:hover {
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */
