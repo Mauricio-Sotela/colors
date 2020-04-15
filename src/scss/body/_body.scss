@@ -1,8 +1,27 @@
-body {
-  background-color: color(cool);
-  #box {
-    width: $box-size;
-    height: $box-size;
-    background-color: $box-color;
-  }
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** Reset para REMS  65,5% = 10px de 16px**/
+  scroll-behavior: smooth;
+  
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: color(main);
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  width: 100vw;
+  height: 100vh;
+}
+
