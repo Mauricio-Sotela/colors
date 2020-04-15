@@ -10,16 +10,14 @@ const rgb = style["background-color"]
  r= parseInt(rgb.split(",")[0].split("rgb(")[1]) ;
  g= parseInt(rgb.split(",")[1]) ;
  b= parseInt(rgb.split(",")[2].split(")")[0]) ;
-console.log(r,g,b);    
-console.log(RGBToHex()); 
-
-
-
+ //console.log(r,g,b);    
+ //console.log(RGBToHex()); 
+ 
 /**COLORS */
 const n_match  = ntc.name(this.RGBToHex());
 n_rgb        = n_match[0]; // RGB value of closest match
 n_name       = n_match[1]; // Text string: Color name
-console.log(n_name); 
+ //console.log(n_name); 
 
 /**COLOR NAMES */ 
 const name = document.querySelectorAll(".name");
@@ -35,7 +33,7 @@ code[i].innerHTML= n_rgb ;
 
 
 
-/**RGB TO HEX */
+/**RGB TO HEX FUNCTION */
 function RGBToHex() {
     r = r.toString(16);
     g = g.toString(16);
