@@ -5,24 +5,24 @@ const rgb = style["background-color"]
 let r= parseInt(rgb.split(",")[0].split("rgb(")[1]) ;
 let g= parseInt(rgb.split(",")[1]) ;
 let b= parseInt(rgb.split(",")[2].split(")")[0]) ;
-console.log(r,g,b); 
+//console.log(r,g,b); 
 
 /**RGB TO HEX */
 function RGBToHex() {
     r = r.toString(16);
     g = g.toString(16);
     b = b.toString(16);
-   console.log(r);
+   //console.log(r);
     if (r.length == 1)
       r = "0" + r;
     if (g.length == 1)
-      g = "0" + g;
+      g = "0" + g; 
     if (b.length == 1)
       b = "0" + b;
   
     return "#" + r + g + b;
   }
-  console.log(RGBToHex()); 
+  //console.log(RGBToHex());  
   
 
 /**COLORS */
