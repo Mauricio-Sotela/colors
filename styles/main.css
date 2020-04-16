@@ -48,11 +48,22 @@ body {
   height: 70%;
   border-radius: 1rem;
 }
+.main-box p {
+  margin: 0.3rem;
+  font-size: 1em;
+}
+.main-box p span {
+  margin-left: 0.5rem;
+}
+.main-box p span:hover {
+  color: #c93687;
+  cursor: pointer;
+}
 .main-box .box1 {
-  background-color: #ffff00;
+  background-color: #1eff00;
 }
 .main-box .box2 {
-  background-color: #f6454c;
+  background-color: #ff6f00;
 }
 .main-box .box3 {
   background-color: #0000ff;
