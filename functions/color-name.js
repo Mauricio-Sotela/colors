@@ -54,32 +54,6 @@ function RGBToHex() {
 
 const code= document.querySelectorAll(".code");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Loop through all elements and attaching event listener
 code.forEach(box => {
   box.addEventListener('click',copyText)
