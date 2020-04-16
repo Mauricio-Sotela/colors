@@ -74,16 +74,16 @@ body {
   border-radius: 1rem;
 }
 .main-box .box1 {
-  background-color: #1eff00;
+  background-color: yellow;
 }
 .main-box .box2 {
-  background-color: #ff6f00;
+  background-color: orange;
 }
 .main-box .box3 {
-  background-color: #0000ff;
+  background-color: blue;
 }
 .main-box .box4 {
-  background-color: #800080;
+  background-color: purple;
 }
 
 /*# sourceMappingURL=main.css.map */
