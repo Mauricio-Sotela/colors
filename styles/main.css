@@ -34,7 +34,7 @@ body {
   flex-wrap: wrap;
   max-width: 500px;
   margin: 4rem auto;
-  background-color: rgba(161, 115, 142, 0.459);
+  background: linear-gradient(#d0d0d0, #636364);
 }
 #test .mini_box {
   width: 10px;

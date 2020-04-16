@@ -94,3 +94,5 @@ ll=0;
    kk.innerHTML +=`<div class="mini_box" style="background-color: #${ntc.names[i][0]};"></div>`
    
  }
+
+ 
