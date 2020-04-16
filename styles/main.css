@@ -47,17 +47,31 @@ body {
   width: 100%;
   height: 70%;
   border-radius: 1rem;
+  margin-bottom: 1.5rem;
 }
 .main-box p {
-  margin: 0.3rem;
+  margin: 1rem;
   font-size: 1em;
 }
 .main-box p span {
+  position: relative;
   margin-left: 0.5rem;
+  padding: 1rem;
 }
 .main-box p span:hover {
   color: #c93687;
   cursor: pointer;
+  border: 1px solid black;
+  border-radius: 2rem;
+}
+.main-box p span:hover::after {
+  content: "Copy";
+  position: absolute;
+  right: -5rem;
+  background-color: rgba(0, 0, 0, 0.863);
+  color: white;
+  padding: 0.2rem;
+  border-radius: 1rem;
 }
 .main-box .box1 {
   background-color: #1eff00;
