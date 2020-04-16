@@ -1,0 +1,15 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+//mixin ith arguments
+
+@mixin flex2($j-content,$t-aling,$a-items) {
+    display: flex;
+    justify-content: $j-content;
+    text-align: $t-aling;
+    align-items: $a-items;
+}

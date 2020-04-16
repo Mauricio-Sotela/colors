@@ -1,3 +1,5 @@
+
+
 /**BOX SELECTION */
 const box= document.querySelectorAll(".box")
 /**LOOP THE BOX */
@@ -29,6 +31,7 @@ const code= document.querySelectorAll(".code");
 name[i].innerHTML=n_name;  
 code[i].innerHTML= n_rgb ; 
 
+
 } 
 
 
@@ -50,6 +53,46 @@ function RGBToHex() {
   }
   //console.log(RGBToHex());  
   
+/**COPY TEXT FUNCTION */
+
+const code= document.querySelectorAll(".code");
+
+//Loop through all elements and attaching event listener
+code.forEach(box => {
+  box.addEventListener('click',copyText)
+})
+
+// function for selecting the text of an element based on the event.target (supporting IE)
+function selectText() {
+    var element = event.target
+    var range;
+    if (document.selection) {
+        // IE
+        range = document.body.createTextRange();
+        range.moveToElementText(element);
+        range.select();
+    } else if (window.getSelection) {
+        range = document.createRange();
+        range.selectNode(element);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+    }
+}
+
+// function for copying selected text in clipboard
+function copyText() {
+    selectText();
+    alert('Color code ' + event.target.innerText + ' copied in clipboard')
+    document.execCommand("copy");
+} 
 
 
+/**MINI BOXES */
+kk=document.querySelector("#test")
+ll=0;
+ for (let i = 0; i < ntc.names.length; i++) {
+   kk.innerHTML +=`<div class="mini_box" style="background-color: #${ntc.names[i][0]};"></div>`
+   
+ }
 
+ 
