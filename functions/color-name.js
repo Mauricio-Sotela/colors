@@ -1,3 +1,5 @@
+
+
 /**BOX SELECTION */
 const box= document.querySelectorAll(".box")
 /**LOOP THE BOX */
@@ -28,6 +30,7 @@ const code= document.querySelectorAll(".code");
 /**INSERTING THE HEX CODE AND COLOR NAME */
 name[i].innerHTML=n_name;  
 code[i].innerHTML= n_rgb ; 
+
 
 } 
 
@@ -82,3 +85,12 @@ function copyText() {
     alert('Color code ' + event.target.innerText + ' copied in clipboard')
     document.execCommand("copy");
 } 
+
+
+/**MINI BOXES */
+kk=document.querySelector("#test")
+ll=0;
+ for (let i = 0; i < ntc.names.length; i++) {
+   kk.innerHTML +=`<div class="mini_box" style="background-color: #${ntc.names[i][0]};"></div>`
+   
+ }

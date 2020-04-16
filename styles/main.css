@@ -17,11 +17,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #ccfadf;
+  background-color: #ffffff;
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   width: 100vw;
   height: 100%;
+}
+
+#test {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 4rem auto;
+  background-color: rgba(161, 115, 142, 0.459);
+}
+#test .mini_box {
+  width: 10px;
+  height: 10px;
+  margin: 0.1rem;
+  border-radius: 50%;
+}
+#test .mini_box:hover {
+  transform: scale(2.5);
+  cursor: pointer;
 }
 
 .main-box {

@@ -32,7 +32,7 @@ Sample Usage:
 
 var ntc = {
 
-    init: function() {
+    init:  function() {
       var color, rgb, hsl;
       for(var i = 0; i < ntc.names.length; i++)
       {
@@ -1680,7 +1680,11 @@ var ntc = {
   ["FFFFF0", "Ivory"],
   ["FFFFFF", "White"]
   ]
+ 
+  };
   
-  }
-  
-  ntc.init();
+
+ 
+ 
+
+
